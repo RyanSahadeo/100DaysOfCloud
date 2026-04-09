@@ -2,32 +2,29 @@
   <img src="banner.png">
 </p>
 
-## The Challenge
-1. Read about the challenge and register at [#100DaysOfCloud.com](https://100DaysOfCloud.com)
-2. Join the [Discord Channel](https://discord.gg/c6Db8nY)
-3. Copy the [100DaysOfCloud/100DaysOfCloud Journey Template](https://github.com/100DaysOfCloud/100DaysOfCloud/generate)
-4. Use the [Micro](Templates/000-DAY-ARTICLE-MICRO-TEMPLATE.md), [Short](Templates/001-DAY-ARTICLE-SHORT-TEMPLATE.md) or [Long](Templates/002-DAY-ARTICLE-LONG-TEMPLATE.md) Day Journey Template and document your day-to-day progress.
-5. Update your main README to link back to your Day Journey article
-4. If you need ideas go to [#100DaysOfCloudIdeas](https://github.com/100DaysOfCloud/100DaysOfCloudIdeas)
+## Ryan Sahadeo's Cloud Journey
 
-## How to use this template:
-Fill in your details where you see this icon ✍️
-We have provided a sample Day Journey entry staring at 0. You can delete this example.
+Ryan Sahadeo is a senior cybersecurity professional and PhD candidate in Cybersecurity Leadership at Capitol Technology University with more than 14 years of experience across consulting, corporate leadership, and academic research. His career began advising Shark Tank entrepreneurs as a cybersecurity consultant and progressed into enterprise leadership roles where he directed security programs, policies, accountability structures, and multimillion-dollar budgets.
 
-## [✍️ Your Name]'s Cloud Journey
+Ryan holds a Master of Science in Cybersecurity Management from Nova Southeastern University’s College of Computing, AI and Cybersecurity and a Bachelor of Science in Health Science from Long Island University’s Brooklyn Campus. 
 
-[✍️ Introduce yourself]
+## Why did you start this challenge?
 
-[✍️ Tell us why you started this challenge]
+I began the 100 Days of Cloud challenge with a deliberate and strategic intent: to deepen my expertise at the intersection of cloud computing and governance, risk, and compliance (GRC). As cloud technologies continue to redefine organizational infrastructure, the nature of risk has evolved in both complexity and scale. I recognized that to remain effective and forward looking in cybersecurity, I must move beyond traditional compliance frameworks and develop a more nuanced, technically grounded understanding of cloud environments. This challenge represents a structured commitment to that goal: a disciplined, daily investment in mastering the principles, architectures, and security considerations that underpin modern cloud ecosystems.
 
-[✍️ Tell us where you want to be at the end of the challenge]
+More specifically, I am motivated by the growing disconnect that often exists between regulatory expectations and technical implementation in cloud contexts. My aim is to bridge that gap. By immersing myself in cloud security concepts - ranging from identity and access management to shared responsibility models and cloud-native threat vectors - I am positioning myself to translate complex technical realities into actionable compliance strategies. This is not merely about acquiring knowledge; it is about cultivating the ability to apply that knowledge in a way that enhances organizational resilience and regulatory alignment.
 
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+## Where do you want to be at the end of the challenge?
+
+By the conclusion of this 100-day journey, I intend to emerge with both confidence and competence in cloud security as it relates to GRC. I envision myself as a practitioner who can seamlessly interpret cloud architectures, assess risk with precision, and design compliance programs that are not only theoretically sound but also operationally feasible. I expect to have developed a working familiarity with major cloud platforms, a refined understanding of cloud-specific control frameworks, and the ability to engage in informed dialogue with engineers, auditors, and executive stakeholders alike.
+
+Ultimately, my goal is to evolve into a more well-rounded cybersecurity professional—one who is capable of leading cloud risk initiatives, advising on secure cloud adoption, and contributing meaningfully to the development of governance structures that keep pace with technological innovation. This challenge is not an endpoint, but a catalyst for that transformation.
+
+[GitHub](https://github.com/RyanSahadeo) | [LinkedIn](https://www.linkedin.com/in/RyanSahadeo)
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [My First Day](Journey/001/Readme.md)
+- [x] ☁️ 1 > [Day 1: Create AWS Key Pair](Journey/001/Readme.md)
 - [ ] ☁️ 2 > [](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
