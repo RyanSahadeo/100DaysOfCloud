@@ -1,52 +1,59 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-11 at 2.19.52 PM.png>)
 
-# New post title here
+# Day 2: Create Security Groups
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+The Nautilus DevOps team is strategizing the migration of a portion of their infrastructure to the AWS cloud. Recognizing the scale of this undertaking, they have opted to approach the migration in incremental steps rather than as a single massive transition. To achieve this, they have segmented large tasks into smaller, more manageable units. This granular approach enables the team to execute the migration in gradual phases, ensuring smoother implementation and minimizing disruption to ongoing operations. By breaking down the migration into smaller tasks, the Nautilus DevOps team can systematically progress through each stage, allowing for better control, risk mitigation, and optimization of resources throughout the migration process.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+For this task, create a security group under default VPC with the following requirements:
 
-## Use Case
+- Name of the security group is **xfusion-sg**.
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- The description must be **Security group for Nautilus App Servers**
 
-## Cloud Research
+- Add the inbound rule of type **HTTP**, with port range of **80**. Enter the source CIDR range of **0.0.0.0/0**.
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Add another inbound rule of type **SSH**, with port range of **22**. Enter the source CIDR range of **0.0.0.0/0**.
 
-## Try yourself
+## Credentials
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+Use below given **AWS Credentials**: 
 
-### Step 1 — Summary of Step
+![alt text](AWS_Credentials.png)
 
-![Screenshot](https://via.placeholder.com/500x300)
+**Notes**:
 
-### Step 1 — Summary of Step
+Create the resources only in **us-east-1** region.
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 1 — LogIn Using Provided Credentials
 
-### Step 3 — Summary of Step
+![alt text](<Screenshot 2026-04-11 at 2.05.25 PM.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Verify location of Region
 
-## ☁️ Cloud Outcome
+![alt text](<Screenshot 2026-04-11 at 2.06.17 PM.png>)
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+### Step 3 — Navigate to Security Groups Settings
 
-## Next Steps
+In order to create a Security Group, you have to navigate to the Security Group link in the EC2 service menu as shown below.
 
-✍️ Describe what you think you think you want to do next.
+![alt text](<Screenshot 2026-04-11 at 2.10.12 PM.png>)
 
-## Social Proof
+As shown above, there is an existing Security Group, however, per the instructions, we must create another Security Group for the Nutilus DevOps team. 
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+## Step 4 - Creating the Security Group
 
-[link](link)
+Once you navigate to the Key Pair settings as shown above in **Step 3**, the next step would be to click on Create Security Group and enter in the details provided, as shown below: 
+
+ ![alt text](<Screenshot 2026-04-11 at 2.16.03 PM.png>)
+
+![alt text](<Screenshot 2026-04-11 at 2.17.59 PM.png>)
+
+## Step 5 - Save Changes
+
+Lastly, click on Create Security Group to save changes and successfully create the Security Group as shown below:
+
+![alt text](<Screenshot 2026-04-11 at 2.18.20 PM.png>)
