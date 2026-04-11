@@ -24,8 +24,8 @@ Ultimately, my goal is to evolve into a more well-rounded cybersecurity professi
 
 ## Stepping out the door
 
-- [x] ☁️ 1 > [Day 1: Create AWS Key Pair](Journey/001/Readme.md)
-- [ ] ☁️ 2 > [](Journey/002/Readme.md)
+- [X] ☁️ 1 > [Day 1: Create AWS Key Pair](Journey/001/Readme.md)
+- [X] ☁️ 2 > [Day 2: Create Security Group](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
