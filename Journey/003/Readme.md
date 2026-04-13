@@ -1,52 +1,57 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](100DaysofCloud_Day3.png)
 
-# New post title here
+# Day 3: Create Subnet
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+The Nautilus DevOps team is strategizing the migration of a portion of their infrastructure to the AWS cloud. Recognizing the scale of this undertaking, they have opted to approach the migration in incremental steps rather than as a single massive transition.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+For this task, create one subnet named **devops-subnet** under default VPC.
 
-## Use Case
+## Credentials
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Use below given **AWS Credentials**: 
 
-## Cloud Research
+![alt text](<Screenshot 2026-04-13 at 12.07.32 PM.png>)
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+**Notes**:
 
-## Try yourself
+Create the resources only in **us-east-1** region.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — LogIn Using Provided Credentials
 
-### Step 1 — Summary of Step
+![alt text](<Screenshot 2026-04-13 at 12.09.28 PM.png>) 
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Verify location of Region
 
-### Step 1 — Summary of Step
+![alt text](<Screenshot 2026-04-13 at 12.10.25 PM.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — Navigate to Submet Settings
 
-### Step 3 — Summary of Step
+In order to create a Subnet, you have to navigate to the Subnet link in the VPC service menu as shown below.
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-13 at 12.15.03 PM.png>) 
 
-## ☁️ Cloud Outcome
+![alt text](<Screenshot 2026-04-13 at 12.15.23 PM.png>)
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+As shown above, there are existing Subnets, however, per the instructions, we must create another Subnet for the Nutilus DevOps team. 
 
-## Next Steps
+![alt text](<Screenshot 2026-04-13 at 12.15.44 PM.png>)
 
-✍️ Describe what you think you think you want to do next.
+## Step 4 - Creating the Subnet
 
-## Social Proof
+Once you navigate to the Subnet settings as shown above in **Step 3**, the next step would be to click on Create Subnet and enter in the details provided, as shown below: 
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+![alt text](<Screenshot 2026-04-13 at 12.21.03 PM.png>)
 
-[link](link)
+**Note**: The IPV4 CIDR range cannot be an existing IP address listed int he above table so a subnet address of 96 was added to be unique.
+
+## Step 5 - Save Changes
+
+Lastly, click on Create Subnet to save changes and successfully create the Subnet as shown below:
+
+![alt text](<Screenshot 2026-04-13 at 12.25.00 PM.png>)
+
+![alt text](<Screenshot 2026-04-13 at 12.25.19 PM.png>)
