@@ -1,52 +1,55 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-14 at 12.08.50 PM.png>)
 
-# New post title here
+# Day 4: Enable Versioning for S3 Bucket
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Data protection and recovery are fundamental aspects of data management. It's essential to have systems in place to ensure that data can be recovered in case of accidental deletion or corruption. The DevOps team has received a requirement for implementing such measures for one of the S3 buckets they are managing.
 
-## Prerequisite
+The s3 bucket name is **nautilus-s3-21802**, enable **versioning** for this bucket.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+## The Task
 
-## Use Case
+The s3 bucket name is **nautilus-s3-21802**, enable **versioning** for this bucket.
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+## Credentials
 
-## Cloud Research
+Use below given **AWS Credentials**: 
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+![alt text](<Screenshot 2026-04-14 at 11.27.21 AM.png>)
 
-## Try yourself
+**Notes**:
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+Create the resources only in **us-east-1** region.
 
-### Step 1 — Summary of Step
+### Step 1 — LogIn Using Provided Credentials
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-14 at 11.28.53 AM.png>)
 
-### Step 1 — Summary of Step
+### Step 2 — Verify location of Region
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-13 at 12.10.25 PM-1.png>)
 
-### Step 3 — Summary of Step
+### Step 3 — Navigate to S3 bucket Settings
 
-![Screenshot](https://via.placeholder.com/500x300)
+In order to create enable **versioning** within the designated S3 bucket, you have to navigate to the S3 settings as shown below:
 
-## ☁️ Cloud Outcome
+![alt text](<Screenshot 2026-04-14 at 11.52.45 AM.png>)
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+### Step 4 — Enabling Versioning
 
-## Next Steps
+![alt text](<Screenshot 2026-04-14 at 12.06.26 PM.png>)
 
-✍️ Describe what you think you think you want to do next.
+After clicking on the chosen bucket,, the user must navigate to the Properties settings within that bucket to enable versioning.
 
-## Social Proof
+By default, versioning within the chosen bucket, as shown above, is set to Disabled.
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+Click on Edit to toggle the setting to Enable. 
 
-[link](link)
+![alt text](<Screenshot 2026-04-14 at 12.06.48 PM.png>)
+
+## Step 5 - Save Changes
+
+Lastly, click on **Save changes** and successfully complete the day's challenge as shown below:
+
+![alt text](<Screenshot 2026-04-14 at 12.07.05 PM.png>)
