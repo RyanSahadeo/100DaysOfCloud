@@ -1,52 +1,67 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-15 at 11.38.37 AM.png>)
 
-# New post title here
+# Day 5: Create GP3 Volume
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+The Nautilus DevOps team is strategizing the migration of a portion of their infrastructure to the AWS cloud. Recognizing the scale of this undertaking, they have opted to approach the migration in incremental steps rather than as a single massive transition. To achieve this, they have segmented large tasks into smaller, more manageable units. This granular approach enables the team to execute the migration in gradual phases, ensuring smoother implementation and minimizing disruption to ongoing operations. By breaking down the migration into smaller tasks, the Nautilus DevOps team can systematically progress through each stage, allowing for better control, risk mitigation, and optimization of resources throughout the migration process.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Create a volume with the following requirements:
 
-## Use Case
+- Name of the volume should be xfusion-volume.
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- Volume type must be gp3.
 
-## Cloud Research
+- Volume size must be 2 GiB.
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+## Credentials
 
-## Try yourself
+Use below given **AWS Credentials**: 
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+![alt text](<Screenshot 2026-04-15 at 11.16.35 AM.png>)
 
-### Step 1 — Summary of Step
+**Notes**:
 
-![Screenshot](https://via.placeholder.com/500x300)
+Create the resources only in **us-east-1** region.
 
-### Step 1 — Summary of Step
+### Step 1 — LogIn Using Provided Credentials
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-15 at 11.17.49 AM.png>)
 
-### Step 3 — Summary of Step
+### Step 2 — Verify location of Region
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-13 at 12.10.25 PM-1.png>)
 
-## ☁️ Cloud Outcome
+### Step 3 — Navigate to Volume Settings
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Om order to create the new volume successfully, you must first navigate to the Volume settings which are under the EC2 settings as shown below:
 
-## Next Steps
+![alt text](<Screenshot 2026-04-15 at 11.34.00 AM.png>)
 
-✍️ Describe what you think you think you want to do next.
+Once in the EC2 settings, you need to scroll down to Volumes under the **Elastic Block Store** section on the left as shown below:
 
-## Social Proof
+![alt text](<Screenshot 2026-04-15 at 11.34.18 AM.png>)
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+### Step 4 — Creating the Volume
 
-[link](link)
+When you are in the Volume settings, by default there are none listed. In order to create a Volume, you must first click on Create Volume on the right side as shown below:
+
+![alt text](<Screenshot 2026-04-15 at 11.34.35 AM.png>)
+
+Enter the provided settings as provided above: 
+
+![alt text](<Screenshot 2026-04-15 at 11.36.07 AM.png>)
+
+![alt text](<Screenshot 2026-04-15 at 11.36.18 AM.png>) 
+
+Once you hit **Save Changes**, you'll notice the name of the Volume is blank. In order to edit it, you need to click on the pencil icon under the *Name* field.
+
+![alt text](<Screenshot 2026-04-15 at 11.36.41 AM.png>)
+
+## Step 5 - Editing the Name and Save Changes
+
+Lastly, edit the *Name* field to the required setting as mentioned above, and then click on the *Check Mark* to save. Hit the Refresh button to reflect the changes made.
+
+![alt text](<Screenshot 2026-04-15 at 11.37.15 AM.png>)
