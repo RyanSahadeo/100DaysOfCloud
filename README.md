@@ -29,7 +29,7 @@ Ultimately, my goal is to evolve into a more well-rounded cybersecurity professi
 - [X] ☁️ 3 > [Day 3: Create Subnet](Journey/003/Readme.md)
 - [X] ☁️ 4 > [Day 4: Enable Versioning for S3 Bucket](Journey/004/Readme.md)
 - [X] ☁️ 5 > [Day 5: Create GP3 Volume](Journey/005/Readme.md)
-- [ ] ☁️ 6 > [](Journey/006/Readme.md)
+- [X] ☁️ 6 > [Day 6: Launch EC2 Instance](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [](Journey/008/Readme.md)
 - [ ] ☁️ 9 > [](Journey/009/Readme.md)
