@@ -1,52 +1,69 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-16 at 5.32.41 PM.png>)
 
-# New post title here
+# Day 6: Launch EC2 Instance
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+The Nautilus DevOps team is strategizing the migration of a portion of their infrastructure to the AWS cloud. Recognizing the scale of this undertaking, they have opted to approach the migration in incremental steps rather than as a single massive transition. To achieve this, they have segmented large tasks into smaller, more manageable units.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+For this task, create an EC2 instance with following requirements:
 
-## Use Case
+1) The name of the instance must be **xfusion-ec2**.
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+2) You can use the **Amazon Linux** AMI to launch this instance.
 
-## Cloud Research
+3) The Instance type must be **t2.micro**.
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+4) Create a new RSA key pair named **xfusion-kp**.
 
-## Try yourself
+5) Attach the default (available by default) security group.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+## Credentials
 
-### Step 1 — Summary of Step
+Use below given **AWS Credentials**: 
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-16 at 4.02.39 PM.png>)
 
-### Step 1 — Summary of Step
+**Notes**:
 
-![Screenshot](https://via.placeholder.com/500x300)
+Create the resources only in **us-east-1** region.
 
-### Step 3 — Summary of Step
+### Step 1 — LogIn Using Provided Credentials
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-16 at 4.06.15 PM.png>)
 
-## ☁️ Cloud Outcome
+### Step 2 — Verify location of Region
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![alt text](<Screenshot 2026-04-13 at 12.10.25 PM-1.png>)
 
-## Next Steps
+### Step 3 — Navigate to Instance Settings
 
-✍️ Describe what you think you think you want to do next.
+Om order to create the new Instance successfully, you must first click on EC2, after which there are two ways to create an instance as shown below:
 
-## Social Proof
+![alt text](<Screenshot 2026-04-16 at 5.26.19 PM.png>)
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+Once in the EC2 settings, you can scroll down to Instances on the left hand side or **Launch Instance** show below:
 
-[link](link)
+![alt text](<Screenshot 2026-04-16 at 5.28.14 PM.png>)
+
+### Step 4 — Creating new RSA Pair
+
+Once you update the Instance settings as required in Step 3, you now need to create teh RSA pair bbefore you can finish the task. 
+
+Click on *Create New key pair* and enter all details as required:
+
+![alt text](<Screenshot 2026-04-16 at 5.29.29 PM.png>)
+
+![alt text](<Screenshot 2026-04-16 at 5.29.42 PM.png>)
+
+Click on *Create new pair* once all information has been entered, to go back to the previous Instance screen.
+
+Click on *Create new instance* to set up the new EC2 instance. 
+
+## Step 5 - Save Changes
+
+Lastly, once you hit **Save Changes**, you'll be able to verify that the new instance shows up in the list of EC2 instances, as shown below:
+
+![alt text](<Screenshot 2026-04-16 at 5.30.41 PM.png>)
