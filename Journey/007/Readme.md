@@ -1,52 +1,73 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-21 at 3.56.00 PM.png>)
 
-# New post title here
+# Day 7: Change EC2 Instance Type
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+During the migration process, the Nautilus DevOps team created several EC2 instances in different regions. They are currently in the process of identifying the correct resources and utilization and are making continuous changes to ensure optimal resource utilization. Recently, they discovered that one of the EC2 instances was underutilized, prompting them to decide to change the instance type.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Please make sure the **Status check** is completed (if its still in *Initializing* state) before making any changes to the instance.
 
-## Use Case
+1) Change the instance type from *t2.micro* to *t2.nano* for **devops-ec2** instance.
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+2) Make sure the ec2 instance **devops-ec2** is in *running* state after the change.
 
-## Cloud Research
+## Credentials
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Use below given **AWS Credentials**: 
 
-## Try yourself
+![alt text](<Screenshot 2026-04-21 at 3.45.02 PM.png>)
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+**Notes**:
 
-### Step 1 — Summary of Step
+Create the resources only in **us-east-1** region.
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 1 — LogIn Using Provided Credentials
 
-### Step 1 — Summary of Step
+![alt text](<Screenshot 2026-04-21 at 3.45.54 PM.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Verify location of Region
 
-### Step 3 — Summary of Step
+![alt text](<Screenshot 2026-04-21 at 3.46.31 PM.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — Navigate to Instance Settings
 
-## ☁️ Cloud Outcome
+In order to change the **devops-ec2**** Instance successfully, you must first click on EC2, then once in the EC2 settings, you can scroll down to Instances on the left hand side:
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![alt text](<Screenshot 2026-04-21 at 3.47.23 PM.png>)
 
-## Next Steps
+### Step 4 — Changing the Instance Type
 
-✍️ Describe what you think you think you want to do next.
+Once in the Instance settings as shown in Step 3, first take note of the state **devops-ec2** instance. It is curently *Running*. 
 
-## Social Proof
+In order to change the Instance type you must navigate to *Instnce Settings*, then click on *Change Instance Type*. As shown in the below screenshot, an instance type can not be changed while an Instance is running.
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+![alt text](<Screenshot 2026-04-21 at 3.52.02 PM.png>)
 
-[link](link)
+Change the Instance State from *Running* to *Stopped* by clicking on Actions, and then *Stop Instance*. 
+
+![alt text](<Screenshot 2026-04-21 at 3.52.12 PM.png>)
+
+As shown above, a Warning will appear. Click on *Stop* and wait about 2 minutes for the instance to complete it's *Stop* downtime. 
+
+Once the Instance State is successfully stopped, the *Change Instance Type* setting becomes available, as shown below:
+
+![alt text](<Screenshot 2026-04-21 at 3.53.18 PM.png>)
+
+Change the Instance Type as required in the instructions (shown below), 
+
+![alt text](<Screenshot 2026-04-21 at 3.54.06 PM.png>)
+
+and then scroll down to the **Change Instance Type** button at the bottom. 
+
+![alt text](<Screenshot 2026-04-21 at 3.54.20 PM.png>)
+
+## Step 5 - Save Changes
+
+Lastly, once you hit **Change Instance Type** as mentioned above in Step 4, you'll be able to verify that the changed instance shows up in the list of EC2 instances, as shown below:
+
+![alt text](<Screenshot 2026-04-21 at 3.55.08 PM.png>)
+
+**Note**: If the Instance State isn't *Running*, click on *Action*, then *Start Instamce* to restart the instance and the Instance State will change after about 1 minute. 
