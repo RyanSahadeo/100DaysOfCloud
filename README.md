@@ -22,6 +22,8 @@ Ultimately, my goal is to evolve into a more well-rounded cybersecurity professi
 
 [GitHub](https://github.com/RyanSahadeo) | [LinkedIn](https://www.linkedin.com/in/RyanSahadeo)
 
+## 50 Days of Cloud (AWS)
+
 ## Stepping out the door
 
 - [X] ☁️ 1 > [Day 1: Create AWS Key Pair](Journey/001/Readme.md)
@@ -31,61 +33,63 @@ Ultimately, my goal is to evolve into a more well-rounded cybersecurity professi
 - [X] ☁️ 5 > [Day 5: Create GP3 Volume](Journey/005/Readme.md)
 - [X] ☁️ 6 > [Day 6: Launch EC2 Instance](Journey/006/Readme.md)
 - [X] ☁️ 7 > [Day 7: Change EC2 Instance](Journey/007/Readme.md)
-- [ ] ☁️ 8 > [](Journey/008/Readme.md)
-- [ ] ☁️ 9 > [](Journey/009/Readme.md)
-- [ ] ☁️ 10 > [](Journey/010/Readme.md)
+- [X] ☁️ 8 > [Day 8: Enable Stop Protection for EC2 Instance](Journey/008/Readme.md)
+- [ ] ☁️ 9 > [Day 9: Enable Termination Protection for EC2 Instance](Journey/009/Readme.md)
+- [ ] ☁️ 10 > [Day 10: Attach Elastic IP to EC2 Instance](Journey/010/Readme.md)
 
 ## Walking down the road
 
-- [ ] ☁️ 11 > [](Journey/011/Readme.md)
-- [ ] ☁️ 12 > [](Journey/012/Readme.md)
-- [ ] ☁️ 13 > [](Journey/013/Readme.md)
-- [ ] ☁️ 14 > [](Journey/014/Readme.md)
-- [ ] ☁️ 15 > [](Journey/015/Readme.md)
-- [ ] ☁️ 16 > [](Journey/016/Readme.md)
-- [ ] ☁️ 17 > [](Journey/017/Readme.md)
-- [ ] ☁️ 18 > [](Journey/018/Readme.md)
-- [ ] ☁️ 19 > [](Journey/019/Readme.md)
-- [ ] ☁️ 20 > [](Journey/020/Readme.md)
+- [ ] ☁️ 11 > [Day 11: Attach Elastic Network Interface to EC2 Instance](Journey/011/Readme.md)
+- [ ] ☁️ 12 > [Day 12: Attach Volume to EC2 Instance](Journey/012/Readme.md)
+- [ ] ☁️ 13 > [Day 13: Create AMI from EC2 Instance](Journey/013/Readme.md)
+- [ ] ☁️ 14 > [Day 14: Terminate EC2 Instance](Journey/014/Readme.md)
+- [ ] ☁️ 15 > [Day 15: Create Volume Snapshot](Journey/015/Readme.md)
+- [ ] ☁️ 16 > [Day 16: Create IAM User](Journey/016/Readme.md)
+- [ ] ☁️ 17 > [Day 17: Create IAM Group](Journey/017/Readme.md)
+- [ ] ☁️ 18 > [Day 18: Create Read-Only IAM Policy for EC2 Console Access](Journey/018/Readme.md)
+- [ ] ☁️ 19 > [Day 19: Attach IAM Policy to IAM User](Journey/019/Readme.md)
+- [ ] ☁️ 20 > [Day 20: Create IAM Role for EC2 with Policy Attachment](Journey/020/Readme.md)
 
 ## Crossing the bridge
 
-- [ ] ☁️ 21 > [](Journey/021/Readme.md)
-- [ ] ☁️ 22 > [](Journey/022/Readme.md)
-- [ ] ☁️ 23 > [](Journey/023/Readme.md)
-- [ ] ☁️ 24 > [](Journey/024/Readme.md)
-- [ ] ☁️ 25 > [](Journey/025/Readme.md)
-- [ ] ☁️ 26 > [](Journey/026/Readme.md)
-- [ ] ☁️ 27 > [](Journey/027/Readme.md)
-- [ ] ☁️ 28 > [](Journey/028/Readme.md)
-- [ ] ☁️ 29 > [](Journey/029/Readme.md)
-- [ ] ☁️ 30 > [](Journey/030/Readme.md)
+- [ ] ☁️ 21 > [Day 21: Setting Up an EC2 Instance with an Elastic IP for Application Hosting](Journey/021/Readme.md)
+- [ ] ☁️ 22 > [Day 22: Configuring Secure SSH Access to an EC2 Instance](Journey/022/Readme.md)
+- [ ] ☁️ 23 > [Day 23: Data Migration Between S3 Buckets Using AWS CLI](Journey/023/Readme.md)
+- [ ] ☁️ 24 > [Day 24: Setting Up an Application Load Balancer for an EC2 Instance](Journey/024/Readme.md)
+- [ ] ☁️ 25 > [Day 25: Setting Up an EC2 Instance and CloudWatch Alarm](Journey/025/Readme.md)
+- [ ] ☁️ 26 > [Day 26: Configuring an EC2 Instance as a Web Server with Nginx](Journey/026/Readme.md)
+- [ ] ☁️ 27 > [Day 27: Configuring a Public VPC with an EC2 Instance for Internet Access](Journey/027/Readme.md)
+- [ ] ☁️ 28 > [Day 28: Creating a Private ECR Repository](Journey/028/Readme.md)
+- [ ] ☁️ 29 > [Day 29: Establishing Secure Communication Between Public and Private VPCs via VPC Peering](Journey/029/Readme.md)
+- [ ] ☁️ 30 > [Day 30: Enable Internet Access for Private EC2 using NAT Instance](Journey/030/Readme.md)
 
 ## Into the bushy, thorny forest
 
-- [ ] ☁️ 31 > [](Journey/031/Readme.md)
-- [ ] ☁️ 32 > [](Journey/032/Readme.md)
-- [ ] ☁️ 33 > [](Journey/033/Readme.md)
-- [ ] ☁️ 34 > [](Journey/034/Readme.md)
-- [ ] ☁️ 35 > [](Journey/035/Readme.md)
-- [ ] ☁️ 36 > [](Journey/036/Readme.md)
-- [ ] ☁️ 37 > [](Journey/037/Readme.md)
-- [ ] ☁️ 38 > [](Journey/038/Readme.md)
-- [ ] ☁️ 39 > [](Journey/039/Readme.md)
-- [ ] ☁️ 40 > [](Journey/040/Readme.md)
+- [ ] ☁️ 31 > [Day 31: Configuring a Private RDS Instance for Application Development](Journey/031/Readme.md)
+- [ ] ☁️ 32 > [Day 32: Snapshot and Restoration of an RDS Instance](Journey/032/Readme.md)
+- [ ] ☁️ 33 > [Day 33: Create a Lambda Function](Journey/033/Readme.md)
+- [ ] ☁️ 34 > [Day 34: Create a Lambda Function Using CLI](Journey/034/Readme.md)
+- [ ] ☁️ 35 > [Day 35: Deploying and Managing Applications on AWS](Journey/035/Readme.md)
+- [ ] ☁️ 36 > [Day 36: Load Balancing EC2 Instances with Application Load Balancer](Journey/036/Readme.md)
+- [ ] ☁️ 37 > [Day 37: Managing EC2 Access with S3 Role-based Permissions](Journey/037/Readme.md)
+- [ ] ☁️ 38 > [Day 38: Deploying Containerized Applications with Amazon ECS](Journey/038/Readme.md)
+- [ ] ☁️ 39 > [Day 39: Hosting a Static Website on AWS S3](Journey/039/Readme.md)
+- [ ] ☁️ 40 > [Day 40: Troubleshooting Internet Accessibility for an EC2-Hosted Application](Journey/040/Readme.md)
 
 ## Trekking the dunes
 
-- [ ] ☁️ 41 > [](Journey/041/Readme.md)
-- [ ] ☁️ 42 > [](Journey/042/Readme.md)
-- [ ] ☁️ 43 > [](Journey/043/Readme.md)
-- [ ] ☁️ 44 > [](Journey/044/Readme.md)
-- [ ] ☁️ 45 > [](Journey/045/Readme.md)
-- [ ] ☁️ 46 > [](Journey/046/Readme.md)
-- [ ] ☁️ 47 > [](Journey/047/Readme.md)
-- [ ] ☁️ 48 > [](Journey/048/Readme.md)
-- [ ] ☁️ 49 > [](Journey/049/Readme.md)
-- [ ] ☁️ 50 > [](Journey/050/Readme.md)
+- [ ] ☁️ 41 > [Day 41: Securing Data with AWS KMS](Journey/041/Readme.md)
+- [ ] ☁️ 42 > [Day 42: Building and Managing NoSQL Databases with AWS DynamoDB](Journey/042/Readme.md)
+- [ ] ☁️ 43 > [Day 43: Scaling and Managing Kubernetes Clusters with Amazon EKS](Journey/043/Readme.md)
+- [ ] ☁️ 44 > [Day 44: Implementing Auto Scaling for High Availability in AWS](Journey/044/Readme.md)
+- [ ] ☁️ 45 > [Day 45: Configure NAT Gateway for Internet Access in a Private VPC](Journey/045/Readme.md)
+- [ ] ☁️ 46 > [Day 46: Event-Driven Processing with Amazon S3 and Lambda](Journey/046/Readme.md)
+- [ ] ☁️ 47 > [Day 47: Integrating AWS SQS and SNS for Reliable Messaging](Journey/047/Readme.md)
+- [ ] ☁️ 48 > [Day 48: Automating Infrastructure Deployment with AWS CloudFormation](Journey/048/Readme.md)
+- [ ] ☁️ 49 > [Day 49: Centralized Audit Logging with VPC Peering](Journey/049/Readme.md)
+- [ ] ☁️ 50 > [Day 50: Expanding EC2 Instance Storage for Development Needs](Journey/050/Readme.md)
+
+## 50 Days of Cloud (Azure)
 
 ## Winding through the canyons
 
