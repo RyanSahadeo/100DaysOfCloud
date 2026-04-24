@@ -1,24 +1,20 @@
-![alt text](<Screenshot 2026-04-21 at 3.56.00 PM.png>)
+![alt text](<Screenshot 2026-04-22 at 1.54.36 PM.png>)
 
-# Day 7: Change EC2 Instance Type
+# Day 8: Enable Stop Protection for EC2 Instance
 
 ## Introduction
 
-During the migration process, the Nautilus DevOps team created several EC2 instances in different regions. They are currently in the process of identifying the correct resources and utilization and are making continuous changes to ensure optimal resource utilization. Recently, they discovered that one of the EC2 instances was underutilized, prompting them to decide to change the instance type.
+As part of the migration, there were some components added to the AWS account. Team created one of the EC2 instances where they need to make some changes now.
 
 ## The Task
 
-Please make sure the **Status check** is completed (if its still in *Initializing* state) before making any changes to the instance.
-
-1) Change the instance type from *t2.micro* to *t2.nano* for **devops-ec2** instance.
-
-2) Make sure the ec2 instance **devops-ec2** is in *running* state after the change.
+There is an EC2 instance named **datacenter-ec2** under **us-east-1** region, enable the stop protection for this instance.
 
 ## Credentials
 
 Use below given **AWS Credentials**: 
 
-![alt text](<Screenshot 2026-04-21 at 3.45.02 PM.png>)
+![alt text](<Screenshot 2026-04-22 at 1.26.51 PM.png>)
 
 **Notes**:
 
@@ -26,48 +22,34 @@ Create the resources only in **us-east-1** region.
 
 ### Step 1 — LogIn Using Provided Credentials
 
-![alt text](<Screenshot 2026-04-21 at 3.45.54 PM.png>)
+![alt text](<Screenshot 2026-04-22 at 1.30.54 PM.png>)
 
 ### Step 2 — Verify location of Region
 
-![alt text](<Screenshot 2026-04-21 at 3.46.31 PM.png>)
+![alt text](<Verify AWS Region.png>)
 
 ### Step 3 — Navigate to Instance Settings
 
-In order to change the **devops-ec2**** Instance successfully, you must first click on EC2, then once in the EC2 settings, you can scroll down to Instances on the left hand side:
+The task is to enable Stop Protection on the existing EC2 instance. First step is to navigate to the Instance settigns which can be found under the EC2 settings, shown below:
 
-![alt text](<Screenshot 2026-04-21 at 3.47.23 PM.png>)
+![alt text](<Screenshot 2026-04-22 at 1.51.34 PM.png>)
 
-### Step 4 — Changing the Instance Type
+Once there, click on Instances in the left hand side menu:
 
-Once in the Instance settings as shown in Step 3, first take note of the state **devops-ec2** instance. It is curently *Running*. 
+![alt text](<Screenshot 2026-04-22 at 1.51.42 PM.png>)
 
-In order to change the Instance type you must navigate to *Instnce Settings*, then click on *Change Instance Type*. As shown in the below screenshot, an instance type can not be changed while an Instance is running.
+### Step 4 — Changing the Stop Protection Setting
 
-![alt text](<Screenshot 2026-04-21 at 3.52.02 PM.png>)
+To *Enable* Stop Protection on the Instance, you must first click on *Actions*, then *Instance Settings*, followed by *Change Stop Protection* as shown in the below screenshot:
 
-Change the Instance State from *Running* to *Stopped* by clicking on Actions, and then *Stop Instance*. 
+![alt text](<Screenshot 2026-04-22 at 1.52.01 PM.png>)
 
-![alt text](<Screenshot 2026-04-21 at 3.52.12 PM.png>)
+Once you click on *Change Stop Protection*, a box appears with the Enable box as unchecked by default. Check the box and then click **Save**.
 
-As shown above, a Warning will appear. Click on *Stop* and wait about 2 minutes for the instance to complete it's *Stop* downtime. 
+![alt text](<Screenshot 2026-04-22 at 1.52.08 PM.png>)
 
-Once the Instance State is successfully stopped, the *Change Instance Type* setting becomes available, as shown below:
+### Step 5 — Save Changes 
 
-![alt text](<Screenshot 2026-04-21 at 3.53.18 PM.png>)
+Once asved, you will get a green banner oon the Insance page showing that *Enable Stop Protection* has been activated as shown below: 
 
-Change the Instance Type as required in the instructions (shown below), 
-
-![alt text](<Screenshot 2026-04-21 at 3.54.06 PM.png>)
-
-and then scroll down to the **Change Instance Type** button at the bottom. 
-
-![alt text](<Screenshot 2026-04-21 at 3.54.20 PM.png>)
-
-## Step 5 - Save Changes
-
-Lastly, once you hit **Change Instance Type** as mentioned above in Step 4, you'll be able to verify that the changed instance shows up in the list of EC2 instances, as shown below:
-
-![alt text](<Screenshot 2026-04-21 at 3.55.08 PM.png>)
-
-**Note**: If the Instance State isn't *Running*, click on *Action*, then *Start Instamce* to restart the instance and the Instance State will change after about 1 minute. 
+![alt text](<Screenshot 2026-04-22 at 1.52.57 PM.png>)
