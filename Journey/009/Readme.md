@@ -1,52 +1,67 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-24 at 12.12.47 PM.png>)
 
-# New post title here
+# Day 9: Enable Termination Protection for EC2 Instance
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+As part of the migration, there were some components created under the AWS account. The Nautilus DevOps team created one EC2 instance where they forgot to enable the termination protection which is needed for this instance.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+An instance named **datacenter-ec2** already exists in **us-east-1** region. Enable termination protection for the same.
 
-## Use Case
+## Credentials
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Use below given **AWS Credentials**: 
 
-## Cloud Research
+![alt text](<Screenshot 2026-04-24 at 9.44.25 AM-1.png>)
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+**Notes**:
 
-## Try yourself
+Create the resources only in **us-east-1** region.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — LogIn Using Provided Credentials
 
-### Step 1 — Summary of Step
+![alt text](<Screenshot 2026-04-24 at 9.46.58 AM.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Verify location of Region
 
-### Step 1 — Summary of Step
+![alt text](<Verify AWS Region.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — Navigate to Instance Settings
 
-### Step 3 — Summary of Step
+The task is to enable Terminate Protection on the existing EC2 instance. First step is to navigate to the Instance settigns which can be found under the EC2 settings, shown below:
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-22 at 1.51.34 PM.png>)
 
-## ☁️ Cloud Outcome
+Once there, click on Instances in the left hand side menu, which will bring up the instance shown below:
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![alt text](<Screenshot 2026-04-24 at 9.47.46 AM.png>)
 
-## Next Steps
+### Step 4 — Enable the Terminate Protection
 
-✍️ Describe what you think you think you want to do next.
+To *Enable* Terminate Protection on the Instance, you must first click on *Actions*, then *Instance Settings*, followed by *Change Stop Protection* as shown in the below screenshot:
 
-## Social Proof
+![alt text](<Screenshot 2026-04-24 at 9.48.33 AM.png>)
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+Once you click on *Change Terminate Protection*, a box appears with the Enable box as unchecked by default. Check the box and then click **Save**.
 
-[link](link)
+![alt text](<Screenshot 2026-04-24 at 9.48.42 AM.png>)
+
+### Step 5 — Save Changes 
+
+Once asved, you will get a green banner oon the Insance page showing that *Enable Stop Protection* has been activated as shown below: 
+
+![alt text](<Screenshot 2026-04-24 at 9.48.54 AM.png>)
+
+To test that the Terminate Protection is in place, you can go to *Instance State* and click on *Terminate Instance* as shown below:
+
+![alt text](<Screenshot 2026-04-24 at 9.49.07 AM.png>) 
+
+A pop up Warning box appears appears, as shown below: 
+
+![alt text](<Screenshot 2026-04-24 at 9.49.15 AM.png>) 
+
+Click on *Terminate (delete)*, and when the window refreshes the Instance list, the red notification banner appears above the list, (*as shown below*): 
+
+![alt text](<Screenshot 2026-04-24 at 9.49.32 AM.png>)
