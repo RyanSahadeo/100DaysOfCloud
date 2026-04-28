@@ -34,8 +34,8 @@ Ultimately, my goal is to evolve into a more well-rounded cybersecurity professi
 - [X] ☁️ 6 > [Day 6: Launch EC2 Instance](Journey/006/Readme.md)
 - [X] ☁️ 7 > [Day 7: Change EC2 Instance](Journey/007/Readme.md)
 - [X] ☁️ 8 > [Day 8: Enable Stop Protection for EC2 Instance](Journey/008/Readme.md)
-- [ ] ☁️ 9 > [Day 9: Enable Termination Protection for EC2 Instance](Journey/009/Readme.md)
-- [ ] ☁️ 10 > [Day 10: Attach Elastic IP to EC2 Instance](Journey/010/Readme.md)
+- [X] ☁️ 9 > [Day 9: Enable Termination Protection for EC2 Instance](Journey/009/Readme.md)
+- [X] ☁️ 10 > [Day 10: Attach Elastic IP to EC2 Instance](Journey/010/Readme.md)
 
 ## Walking down the road
 
