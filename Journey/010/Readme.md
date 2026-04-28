@@ -1,52 +1,61 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![alt text](<Screenshot 2026-04-28 at 1.22.39 PM.png>)
 
-# New post title here
+# Day 10: Attach Elastic IP to EC2 Instance
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+The Nautilus DevOps team has been creating a couple of services on AWS cloud. They have been breaking down the migration into smaller tasks, allowing for better control, risk mitigation, and optimization of resources throughout the migration process. Recently they came up with requirements mentioned below.
 
-## Prerequisite
+## The Task
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+There is an instance named **devops-ec2** and an elastic-ip named **devops-ec2-eip** in **us-east-1** region. Attach the **devops-ec2-eip** elastic-ip to the **devops-ec2** instance.
 
-## Use Case
+## Credentials
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Use below given **AWS Credentials**: 
 
-## Cloud Research
+![alt text](<Screenshot 2026-04-28 at 12.35.38 PM.png>)
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+**Notes**:
 
-## Try yourself
+Create the resources only in **us-east-1** region.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — LogIn Using Provided Credentials
 
-### Step 1 — Summary of Step
+![alt text](<Screenshot 2026-04-28 at 12.35.09 PM.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Verify location of Region
 
-### Step 1 — Summary of Step
+![alt text](<Verify AWS Region.png>)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — Navigate to Elastic IP Settings
 
-### Step 3 — Summary of Step
+The task is to attach the existing elastic IP to the existing EC2 instance. First step is to navigate to the Elastic IP settigns which can be found under the EC2 settings, shown below:
 
-![Screenshot](https://via.placeholder.com/500x300)
+![alt text](<Screenshot 2026-04-28 at 12.40.44 PM.png>)
 
-## ☁️ Cloud Outcome
+Once there, click on Elastic IPs in the middle, which will bring up the list of elastic IPs shown below:
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
 
-## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+### Step 4 — Attach the Elastic IP
 
-## Social Proof
+To attach the elastic IP to the Instance, you must first click on *Actions*, then *Associate Elastic IP Address*, followed by as shown in the below screenshot:
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+![alt text](<Screenshot 2026-04-28 at 12.58.18 PM.png>)
 
-[link](link)
+Once you click on *Associate Elastic IP Address*, a box appears with the settings to be entered by default. Click into each field to select the default settings and then click **Associate**.
+
+![alt text](<Screenshot 2026-04-28 at 12.58.28 PM.png>)
+
+![alt text](<Screenshot 2026-04-28 at 12.58.38 PM.png>)
+
+### Step 5 — Save Changes 
+
+Once associated, you will get the green banner shown below as proof of a successful association:
+
+![alt text](<Screenshot 2026-04-28 at 12.59.07 PM.png>)
+
+Lastly, the Elastic IP does not show up right away, so you will need to refresh the list of Instances, then the Elastic IP will show up as shown below:
+
+![alt text](<Screenshot 2026-04-28 at 12.59.29 PM.png>)
